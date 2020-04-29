@@ -1,5 +1,5 @@
 import React from 'react';
-import { removeFeatre, removeFeature } from '../actions/action';
+import { removeFeature } from '../actions/action';
 import { useDispatch } from 'react';
 
 const AddedFeature = props => {

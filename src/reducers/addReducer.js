@@ -1,7 +1,7 @@
 
 // Reducer to implement add action //
 
-import {BUY_ITEM} from '../actions/action'
+import { REMOVE_FEATURE, BUY_FEATURE } from '../actions/action'
 
 export const startState = {
     additionalPrice: 0,
@@ -21,9 +21,9 @@ export const startState = {
 
 const initialState = startState
 
-export const addFeatureReducer = (state = initialState, action)=>{
+export const buyFeature = (state = initialState, action)=>{
     switch(action.type){
-        case BUY_ITEM:{
+        case BUY_FEATURE:{
           console.log("adding to features PROPS",state )
           console.log("I've been clicked", action.payload)
             return {
@@ -32,4 +32,14 @@ export const addFeatureReducer = (state = initialState, action)=>{
         default:
             return state;
     }
+}
+
+export const removeFeature = (state, action) =>{
+    switch(action.type){
+      case REMOVE_FEATURE:{
+        return state
+    };
+      default:
+        return state;
+  }
 }
