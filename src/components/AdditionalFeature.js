@@ -14,7 +14,7 @@ const handleAdd = () => {
 
   return (
     <li>
-      <button className="button" type = 'submit' value={props.feature.id} onClick={handleAdd}>Add Car</button>
+      <button className="button" type = 'submit' value={props.feature.id} onClick={handleAdd}>Add</button>
       {props.feature.name} (+{props.feature.price})
     </li>
   );
