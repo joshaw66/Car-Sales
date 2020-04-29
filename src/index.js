@@ -6,12 +6,12 @@ import App from './App';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import {devToolsEnhancer} from 'redux-devtools-extension';
-import {buyFeature} from './reducers/addReducer';
+import {vehicleReducer} from './reducers/vehicleReducer';
 
 import 'bulma/css/bulma.css';
 import './styles.scss';
 
-const store = createStore(buyFeature, devToolsEnhancer());
+const store = createStore(vehicleReducer, devToolsEnhancer());
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(
